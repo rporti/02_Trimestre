@@ -22,6 +22,8 @@ const cart = new shoppingcart();
 cart.addProduct(course, 2);
 cart.addProduct(laptop, 1);
 
+//create here another product and add it to the cart
+//complete the classes that are no completed yet
 
 // Show cart items
 cart.showCart();
