@@ -60,9 +60,13 @@
     }, 300);
   });
 
+
+  // PointerCancel el navegador o el sistema operativo deciden interrumpir el seguimiento del puntero
   li.addEventListener("pointercancel", (e) => {
-    li.style.backgroundColor = "grey";
+    li.style.backgroundColor = "red";
     // feedback de cancelación (por ejemplo, el sistema cancela el touch)
+    //Si el navegador interpreta que estás intentando "arrastrar" un elemento (como una imagen o texto seleccionado),
+    //cancelará el seguimiento del puntero para iniciar la operación de arrastre
     logPointerEvent(e, "pointercancel");
   });
 
